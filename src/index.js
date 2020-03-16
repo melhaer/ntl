@@ -1,12 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import './assets/styles/style.scss';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import App from './components/App';
+//import ItemDetails from './components/ItemDetails';
+//import SearchBar from './components/SearchBar';
+
+/*class App extends React.Component {
+  render() {
+    return (
+      <div className="container">
+        <SearchBar />
+          <div className="items-container">
+            <ItemDetails author="Sam" age="34" location="Italy" tags="tag" text="Some text here" />
+            <ItemDetails author="Alex" age="22" location="Spain" tags="tag one, tag two" text="Some text here" />
+            <ItemDetails author="James" age="33" location="Germany" tags="tag one, tag two, tag three" text="Some text here" />
+            <ItemDetails author="Nick" age="44" location="Portugal" tags="tag two" text="Some text here" />
+          </div>
+      </div>
+    );
+  }
+}*/
+
+
+
+ReactDOM.render(
+  <App />,
+  document.querySelector('#root')
+);
