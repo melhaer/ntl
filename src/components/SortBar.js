@@ -7,10 +7,10 @@ class SortBar extends React.Component {
     asc: true,
   }
 
-  toggleSorting = (e) => {
+  toggleSorting = (name) => {
     const currentSorting = this.state.asc;
-    const currentName = this.state.sortedBy === 'name' ? 'nationality' : 'name';
-    this.setState({sortedBy: currentName, asc: !currentSorting})
+    //const currentName = this.state.sortedBy === 'name' ? 'nationality' : 'name';
+    this.setState({sortedBy: name, asc: !currentSorting})
   }
   render() {
     return(
@@ -19,13 +19,13 @@ class SortBar extends React.Component {
         <span 
           title={this.state.asc ? 'Sort ASC' : 'Sort DESC'}  
           className={`sort-filter ${this.state.asc && this.state.sortedBy === 'nationality' ? 'sort-asc' : 'sort-desc'}`} 
-          onClick={this.toggleSorting}>
+          onClick={() => this.toggleSorting('nationality')}>
             Participant nationality
         </span>
         <span 
           title={this.state.asc ? 'Sort ASC' : 'Sort DESC'}  
           className={`sort-filter ${this.state.asc && this.state.sortedBy === 'name' ? 'sort-asc' : 'sort-desc'}`} 
-          onClick={this.toggleSorting}>
+          onClick={() => this.toggleSorting('name')}>
             Participant name
         </span>
       </div>
