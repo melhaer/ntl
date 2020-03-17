@@ -27,6 +27,7 @@ class App extends React.Component {
       },
       {
         "name": "James",
+        "id": "4321",
         "age": 33,
         "location": "Germany",
         "tags": ['two'],
@@ -34,6 +35,7 @@ class App extends React.Component {
       },
       {
         "name": "Nick",
+        "id": "7654",
         "age": 44,
         "location": "Portugal",
         "tags": ['two'],
@@ -41,14 +43,14 @@ class App extends React.Component {
       }
     ];
 
-    const itemDetails = data.map((d) => (
+    const itemDetails = data.map(({id, name, age, location, tags, text}) => (
         <ItemDetails 
-          key={d.id} 
-          name={d.name} 
-          age={d.age} 
-          location={d.location} 
-          tags={d.tags} 
-          text={d.text} 
+          key={id} 
+          name={name} 
+          age={age} 
+          location={location} 
+          tags={tags} 
+          text={text} 
         />
       )
     )
