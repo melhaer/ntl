@@ -17,40 +17,61 @@ class App extends React.Component {
     this.itemsContentRef = React.createRef();
   }
 
+
+
   componentDidMount() {
-     axios.get(`http://localhost:3001/quotes`)
-     //axios.get(`https://jsonplaceholder.typicode.com/users`)
+    this.getQuotes();
+  }
+
+
+  getQuotes() {
+    axios.get(`http://localhost:3001/quotes`)
       .then(res => {
-        console.log(res);
-        const quotes = res.data.data;
+        const quotes = res.data;
         this.setState({ quotes });
-      })
+      }, err => {
+        alert(`Something went wrong, please try again!`);
+      }
+      )
+  }
+
+  removeItem = id => {
+    axios.delete(`http://localhost:3001/quotes/${id}`)
+      .then(
+        res => {
+          this.getQuotes();
+        }, err => {
+          alert(`Something went wrong, please try again!`);
+        }
+      )
   }
 
   onSearchSubmit(term) {
-  
+
   }
   render() {
-    const quoteDetails = this.state.quotes.map(({id, content, created_by, age, participant, tags}) => (
-        <ItemDetails 
-          key={id} 
-          name={`${created_by.name} ${created_by.surname}`} 
-          age={age} 
-          location={participant.nationality} 
-          tags={tags} 
-          text={content} 
-        />
-      )
+    const quoteDetails = this.state.quotes.map(({ id, content, created_by, age, participant, tags }) => (
+      <ItemDetails
+        id={id}
+        key={id}
+        name={`${created_by.name} ${created_by.surname}`}
+        age={age}
+        location={participant.nationality}
+        tags={tags}
+        text={content}
+        closeHandler={this.removeItem}
+      />
+    )
     )
 
-    const itemDetailsHeight = quoteDetails.length / 2 * 300;
-  
+    const itemDetailsHeight = quoteDetails.length / 2 * 250;
+
     return (
 
       <div className="container">
         <SearchBar onSubmit={this.onSearchSubmit} />
         <SortBar />
-        <div className="items-container" ref={this.itemsContentRef} style={{height: `${itemDetailsHeight}px`}}>
+        <div className="items-container" ref={this.itemsContentRef} style={{ height: `${itemDetailsHeight}px` }}>
           {quoteDetails}
         </div>
       </div>

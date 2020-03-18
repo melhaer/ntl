@@ -1,10 +1,12 @@
 import React from 'react';
-
-import DeleteButton from './DeleteButton';
-
 class ItemDetails extends React.Component {
+
+  deleteButtonHandler = () => {
+    this.props.closeHandler(this.props.id);
+  }
+  
   render() {
-    const tagList = this.props.tags.map(tag => <span>{this.props.tags}</span>);
+    const tagList = this.props.tags.map((tag, index) => <span key={index}>{tag}</span>);
     return (
       <div className="item">
         <p className="text">{this.props.text}</p>
@@ -16,7 +18,7 @@ class ItemDetails extends React.Component {
           <span className="author-age">{this.props.age}</span>
           <span className="author-location">from {this.props.location}</span>
         </div>
-        <DeleteButton />
+        <span className="delete-button" title="Delete Item" onClick={this.deleteButtonHandler}></span>
       </div>
     );
   }
