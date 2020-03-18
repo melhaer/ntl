@@ -12,19 +12,81 @@ body {
 }
 
 .container {
+  .search-bar {
+    padding: 1.25rem 0;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+
+    input {
+      min-width: 520px;
+      padding: .9375rem .9375rem .9375rem 2.8125rem;
+      border-radius: 30px;
+      border: 0;
+      @include box-shadow($shadows);
+      background-image: url('../icons/magnifier.svg');
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+      background-size: 25px 25px;
+      color: $pale-color;
+    }
+  }
+
+  .sort-bar {
+    margin: auto;
+    text-align: center;
+    max-width: 1440px;
+    color: $pale-color;
+    font-size: .8rem;
+
+    span {
+      background-color: $content-bg;
+      position: relative;
+      display: inline-block;
+      padding: .625rem 2.5rem .625rem .625rem;
+      margin: 0 0 0 .8rem;
+      color: $text-color;
+      border-radius: 30px;
+      @include box-shadow($shadows);
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        top: calc(50% - 10px);
+        right: 10px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        content: "";
+        mask-repeat: no-repeat;
+        background-color: $pale-color;
+      }
+
+      &.sort-asc {
+        &::before {
+          mask-image: url('../icons/arrow-down.svg');
+        }
+      }
+
+      &.sort-desc {
+        &::before {
+          mask-image: url('../icons/arrow-up.svg');
+        }
+      }
+    }
+  }
+
   .items-container {
     box-sizing: border-box;
-    border: 1px solid red;
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
     min-width: 320px;
     max-width: 1440px;
-    padding: 20px;
+    padding: 1.25rem;
     margin: auto;
-    /* Your container needs a fixed height, and it 
-   * needs to be taller than your tallest column. */
-    height: 6000px;
+    min-height: 300px;
 
     /* Force new columns */
     &::before,
@@ -39,14 +101,15 @@ body {
       position: relative;
       margin-bottom: 2%;
       /* Optional */
-      padding: 60px 10px 10px 40px;
+      padding: 3.75rem .25rem 1.25rem 2.5rem;
+      background-color: $content-bg;
       border-radius: 8px;
-      box-shadow: 3px 3px 20px -3px rgba(0, 0, 0, .25);
+      @include box-shadow($shadows);
 
       /* Re-order items into 2 rows */
       &:nth-child(2n+1) {
         order: 1;
-        margin-right: 10px;
+        margin-right: .25rem;
       }
 
       &:nth-child(2n) {
@@ -66,149 +129,93 @@ body {
         background-color: $accent-color;
       }
     }
-  }
 
-  .text {
-    margin-bottom: 1.5rem;
-  }
-  
-  .tags {
-    font-size: .85rem;
-    color: $pale-color;
-    margin-bottom: 1.2rem;
-  
-    span {
-      display: inline-block;
-      min-width: 30px;
-      padding: .5rem;
-      border: 1px solid $pale-color;
-      border-radius: 20px;
-      text-align: center;
+    .text {
+      margin-bottom: 1.5rem;
+      font-size: .875rem;
+      line-height: 1.6;
     }
-  }
-
-  .author-details {
-    font-size: .85rem;
-    color: $pale-color;
   
-    span {
-      padding-right: 3px;
-    }
-  }
-  
-  .delete-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-  
-    &::before {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      content: "";
-      mask-image: url('../icons/x.svg');
-      mask-repeat: no-repeat;
-      background-color: $pale-color;
-    }
-  }
-  
-  .search-bar {
-    padding: 20px 0;
-    min-width: 320px;
-    max-width: 1440px;
-    margin: auto;
-    text-align: center;
-  
-    input {
-      min-width: 520px;
-      padding: 15px 15px 15px 45px;
-      border-radius: 30px;
-      border: 0;
-      box-shadow: 3px 3px 20px -3px rgba(0, 0, 0, .25);
-      background-image: url('../icons/magnifier.svg');
-      background-repeat: no-repeat;
-      background-position: 10px 10px;
-      background-size: 25px 25px;
+    .tags {
+      font-size: .75rem;
       color: $pale-color;
+      margin-bottom: 1.2rem;
+  
+      span {
+        display: inline-block;
+        min-width: 1.875rem;
+        margin: 0 .5rem 0 0;
+        padding: .5rem;
+        border: 1px solid $pale-color;
+        border-radius: 1.25rem;
+        text-align: center;
+      }
     }
-  }
+
+    .author-details {
+      font-size: .75rem;
+      color: $pale-color;
   
-  .sort-bar {
-    margin: auto;
-    text-align: center;
-    max-width: 1440px;
-    //max-width: 320px;
-    color: $pale-color;
-    font-size: .8rem;
-  
-    span {
-      position: relative;
-      display: inline-block;
-      padding: 10px 40px 10px 10px;
-      margin: 0 0 0 .8rem;
-      color: $text-color;
-      border-radius: 30px;
-      box-shadow: 3px 3px 20px -3px rgba(0, 0, 0, .25);
+      span {
+        padding-right: .1875rem;
+      }
+    }
+
+    .delete-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
       cursor: pointer;
   
       &::before {
-        position: absolute;
-        top: calc(50% - 10px);
-        right: 10px;
         display: inline-block;
         width: 20px;
         height: 20px;
         content: "";
+        mask-image: url('../icons/x.svg');
         mask-repeat: no-repeat;
         background-color: $pale-color;
-      }
-  
-      &.sort-asc {
-        &::before {
-          mask-image: url('../icons/arrow-down.svg');
-        }
-      }
-  
-      &.sort-desc {
-        &::before {
-          mask-image: url('../icons/arrow-up.svg');
-        }
       }
     }
   }
 }
 
 @include for-phone-only {
-  .items-container {
-    flex-flow: column;
-  }
+  .container {
+    .items-container {
+      flex-flow: column;
+    }
 
-  .item {
-    width: auto;
-  }
+    .item {
+      width: 100%;
+    }
 
-  .item:nth-child(2n+1),
-  .item:nth-child(2n) {
-    order: 0;
-    margin-right: 0;
-  }
+    .item:nth-child(2n+1),
+    .item:nth-child(2n) {
+      order: 0;
+      margin-right: 0;
+    }
 
-  .search-bar {
-    input {
-      min-width: 320px;
+    .search-bar {
+      input {
+        min-width: 320px;
+      }
     }
   }
 }
 
 @include for-tablet-portrait-up {
-  .item {
-    width: 43%;
+  .container {
+    .item {
+      width: 43%;
+    }
   }
 }
 
 @include for-desktop-up {
-  .item {
-    width: 46%;
+  .container {
+    .item {
+      width: 46%;
+    }
   }
 }

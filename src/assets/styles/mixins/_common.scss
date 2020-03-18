@@ -2,3 +2,9 @@
 @mixin element-color($color) {
   background-image: url('data:image/svg+xml;utf8,<svg ...><g stroke="#{$color}" ... /></g></svg>');
 }
+
+@mixin box-shadow($params) {
+  box-shadow: $params;
+}
+
+$shadows: 3px 3px 20px -3px rgba(0, 0, 0, .25);

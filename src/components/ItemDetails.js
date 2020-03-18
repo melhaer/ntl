@@ -4,11 +4,12 @@ import DeleteButton from './DeleteButton';
 
 class ItemDetails extends React.Component {
   render() {
+    const tagList = this.props.tags.map(tag => <span>{this.props.tags}</span>);
     return (
       <div className="item">
         <p className="text">{this.props.text}</p>
         <div className="tags">
-          <span>{this.props.tags}</span>
+          {tagList}
         </div>
         <div className="author-details">
           <span className="author-name">{this.props.name},</span>

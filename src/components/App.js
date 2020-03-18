@@ -1,66 +1,57 @@
 import React from 'react';
 
+import axios from 'axios';
+
 import SearchBar from './SearchBar';
 import SortBar from './SortBar';
 import ItemDetails from './ItemDetails';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      quotes: [],
+    }
+
+    this.itemsContentRef = React.createRef();
+  }
+
+  componentDidMount() {
+     axios.get(`http://localhost:3001/quotes`)
+     //axios.get(`https://jsonplaceholder.typicode.com/users`)
+      .then(res => {
+        console.log(res);
+        const quotes = res.data.data;
+        this.setState({ quotes });
+      })
+  }
+
+  onSearchSubmit(term) {
+  
+  }
   render() {
-
-    const data =[
-      {
-        "name": "Sam",
-        "id": "1234",
-        "age": 34,
-        "location": "Italy",
-        "tags": ['one', 'two'],
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget tortor ullamcorper, egestas mi sed, elementum est. Pellentesque mollis lacus eget erat fermentum tincidunt. Vivamus interdum porttitor tincidunt. Sed ultrices lectus maximus volutpat mattis. Maecenas at turpis auctor, imperdiet quam non, dictum magna"
-      },
-      {
-        "name": "Alex",
-        "id": "4567",
-        "age": 22,
-        "location": "Spain",
-        "tags": ['one'],
-        "text": "Sed id purus lacus. Aenean nibh eros, dignissim sed fringilla quis, mattis at turpis."
-      },
-      {
-        "name": "James",
-        "id": "4321",
-        "age": 33,
-        "location": "Germany",
-        "tags": ['two'],
-        "text": "Cras ut consequat erat, nec luctus augue. Curabitur a metus eget metus efficitur malesuada consequat ac sem. Integer laoreet augue nec ornare aliquam"
-      },
-      {
-        "name": "Nick",
-        "id": "7654",
-        "age": 44,
-        "location": "Portugal",
-        "tags": ['two'],
-        "text": "Etiam vel mi vel tellus blandit rhoncus."
-      }
-    ];
-
-    const itemDetails = data.map(({id, name, age, location, tags, text}) => (
+    const quoteDetails = this.state.quotes.map(({id, content, created_by, age, participant, tags}) => (
         <ItemDetails 
           key={id} 
-          name={name} 
+          name={`${created_by.name} ${created_by.surname}`} 
           age={age} 
-          location={location} 
+          location={participant.nationality} 
           tags={tags} 
-          text={text} 
+          text={content} 
         />
       )
     )
+
+    const itemDetailsHeight = quoteDetails.length / 2 * 300;
   
     return (
+
       <div className="container">
         <SearchBar onSubmit={this.onSearchSubmit} />
         <SortBar />
-        <div className="items-container">
-          {itemDetails}
+        <div className="items-container" ref={this.itemsContentRef} style={{height: `${itemDetailsHeight}px`}}>
+          {quoteDetails}
         </div>
       </div>
     );
