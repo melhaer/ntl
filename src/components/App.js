@@ -7,23 +7,12 @@ import SortBar from './SortBar';
 import ItemDetails from './ItemDetails';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      quotes: [],
-    }
-
-    this.itemsContentRef = React.createRef();
+  state = {
+    quotes: [],
   }
-
-
-
   componentDidMount() {
     this.getQuotes();
   }
-
-
   getQuotes() {
     axios.get(`http://localhost:3001/quotes`)
       .then(res => {
@@ -34,18 +23,17 @@ class App extends React.Component {
       }
       )
   }
-
   removeItem = id => {
     axios.delete(`http://localhost:3001/quotes/${id}`)
       .then(
         res => {
+          alert(`The quote will be deleted permanently!`);
           this.getQuotes();
         }, err => {
           alert(`Something went wrong, please try again!`);
         }
       )
   }
-
   onSearchSubmit(term) {
 
   }

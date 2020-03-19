@@ -6,12 +6,11 @@ class SortBar extends React.Component {
     sortedBy: 'name',
     asc: true,
   }
-
-  toggleSorting = (name) => {
+  toggleSorting = sortBy => {
     const currentSorting = this.state.asc;
-    //const currentName = this.state.sortedBy === 'name' ? 'nationality' : 'name';
-    this.setState({sortedBy: name, asc: !currentSorting})
+    this.setState({sortedBy: sortBy, asc: !currentSorting})
   }
+ 
   render() {
     return(
       <div className="sort-bar">
