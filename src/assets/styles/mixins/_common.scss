@@ -1,10 +1,25 @@
-// SVG Background image
-@mixin element-color($color) {
-  background-image: url('data:image/svg+xml;utf8,<svg ...><g stroke="#{$color}" ... /></g></svg>');
-}
 
 @mixin box-shadow($params) {
   box-shadow: $params;
 }
 
 $shadows: 3px 3px 20px -3px rgba(0, 0, 0, .25);
+
+@mixin max-width($params) {
+  max-width: $params;
+}
+
+$maxWidth: 1440px;
+
+@mixin min-width($params) {
+  min-width: $params;
+}
+
+$minWidth: 320px;
+
+$path--rel: "../../icons";
+@mixin svgIcon($img, $repeat, $color) {
+  mask-image: url('#{$path--rel}/#{$img}.svg');
+  mask-repeat: $repeat;
+  background-color: $color;
+}

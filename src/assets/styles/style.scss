@@ -14,8 +14,8 @@ body {
 .container {
   .search-bar {
     padding: 1.25rem 0;
-    min-width: 320px;
-    max-width: 1440px;
+    @include min-width($minWidth);
+    @include max-width($maxWidth);
     margin: auto;
     text-align: center;
 
@@ -36,7 +36,7 @@ body {
   .sort-bar {
     margin: auto;
     text-align: center;
-    max-width: 1440px;
+    @include max-width($maxWidth);
     color: $pale-color;
     font-size: .8rem;
 
@@ -59,19 +59,17 @@ body {
         width: 20px;
         height: 20px;
         content: "";
-        mask-repeat: no-repeat;
-        background-color: $pale-color;
       }
 
       &.sort-asc {
         &::before {
-          mask-image: url('../icons/arrow-down.svg');
+          @include svgIcon(arrow-down, no-repeat, $pale-color);
         }
       }
 
       &.sort-desc {
         &::before {
-          mask-image: url('../icons/arrow-up.svg');
+          @include svgIcon(arrow-up, no-repeat, $pale-color);
         }
       }
     }
@@ -82,8 +80,8 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
-    min-width: 320px;
-    max-width: 1440px;
+    @include min-width($minWidth);
+    @include max-width($maxWidth);
     padding: 1.25rem;
     margin: auto;
     min-height: 300px;
@@ -124,9 +122,7 @@ body {
         position: absolute;
         top: 20px;
         left: 20px;
-        mask-image: url('../icons/quote.svg');
-        mask-repeat: no-repeat;
-        background-color: $accent-color;
+        @include svgIcon(quote, no-repeat, $accent-color);
       }
     }
 
@@ -172,9 +168,7 @@ body {
         width: 20px;
         height: 20px;
         content: "";
-        mask-image: url('../icons/x.svg');
-        mask-repeat: no-repeat;
-        background-color: $pale-color;
+        @include svgIcon(x, no-repeat, $pale-color);
       }
     }
   }
@@ -198,7 +192,7 @@ body {
 
     .search-bar {
       input {
-        min-width: 320px;
+        @include min-width($minWidth);
       }
     }
   }
