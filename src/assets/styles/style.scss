@@ -19,17 +19,33 @@ body {
     margin: auto;
     text-align: center;
 
-    input {
+    .input-wrapper {
+      position: relative;
+      display: inline-block;
       min-width: 520px;
       padding: .9375rem .9375rem .9375rem 2.8125rem;
       border-radius: 30px;
       border: 0;
-      @include box-shadow($shadows);
-      background-image: url('../icons/magnifier.svg');
-      background-repeat: no-repeat;
-      background-position: 10px 10px;
-      background-size: 25px 25px;
+      background-color: $content-bg;
       color: $pale-color;
+      font-size: 1rem;
+      @include box-shadow($shadows);
+
+      &::before {
+        display: inline-block;
+        position: absolute;
+        top: calc(50% - 12px);
+        left: 20px;
+        width: 24px;
+        height: 24px;
+        content: "";
+        @include svgIcon(magnifier, no-repeat, $pale-color);
+      }
+
+      input {
+        border: 0;
+        min-width: 500px;
+      }
     }
   }
 
