@@ -9,18 +9,20 @@ import ItemDetails from './ItemDetails';
 class App extends React.Component {
   state = {
     quotes: [],
+    filteredQuotes: [],
   }
   componentDidMount() {
     this.getQuotes();
   }
   getQuotes() {
     axios.get(`http://localhost:3001/quotes`)
-      .then(res => {
-        const quotes = res.data;
-        this.setState({ quotes });
-      }, err => {
-        alert(`Something went wrong, please try again!`);
-      }
+      .then(
+        res => {
+          const quotes = res.data;
+          this.setState({ quotes });
+        }, err => {
+          alert(`Something went wrong, please try again!`);
+        }
       )
   }
   removeItem = id => {
@@ -34,32 +36,39 @@ class App extends React.Component {
         }
       )
   }
-  onSearchSubmit(term) {
-
+  onSearchSubmit = term => {
+    this.setState({ filteredQuotes: term.trim() });
   }
-  render() {
-    const quoteDetails = this.state.quotes.map(({ id, content, created_by, age, participant, tags }) => (
-      <ItemDetails
-        id={id}
-        key={id}
-        name={`${created_by.name} ${created_by.surname}`}
-        age={age}
-        location={participant.nationality}
-        tags={tags}
-        text={content}
-        closeHandler={this.removeItem}
-      />
-    )
-    )
 
-    const itemDetailsHeight = quoteDetails.length / 2 * 250;
+  render() {
+    let filteredResults = this.state.quotes;
+
+    if (this.state.filteredQuotes) {
+      filteredResults = this.state.quotes.filter(quote => quote.content.includes(this.state.filteredQuotes));
+    }
+
+    const quoteDetails = filteredResults.map(
+      ({ id, content, created_by, age, participant, tags }) => (
+        <ItemDetails
+          id={id}
+          key={id}
+          name={`${created_by.name} ${created_by.surname}`}
+          age={age}
+          location={participant.nationality}
+          tags={tags}
+          text={content}
+          closeHandler={this.removeItem}
+        />
+      )
+    );
+
+    const itemDetailsHeight = ((quoteDetails.length / 2) & 1) ? (quoteDetails.length / 2 * 270) + 200 : quoteDetails.length / 2 * 270;
 
     return (
-
       <div className="container">
         <SearchBar onSubmit={this.onSearchSubmit} />
         <SortBar />
-        <div className="items-container" ref={this.itemsContentRef} style={{ height: `${itemDetailsHeight}px` }}>
+        <div className="items-container" style={{ height: `${itemDetailsHeight}px` }}>
           {quoteDetails}
         </div>
       </div>

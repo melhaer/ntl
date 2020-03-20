@@ -12,6 +12,8 @@ body {
 }
 
 .container {
+  box-sizing: border-box;
+  padding: 0 10px;
   .search-bar {
     padding: 1.25rem 0;
     @include min-width($minWidth);
@@ -114,8 +116,7 @@ body {
     .item {
       position: relative;
       margin-bottom: 2%;
-      /* Optional */
-      padding: 3.75rem .25rem 1.25rem 2.5rem;
+      padding: 3.75rem 1rem 1.25rem 2.5rem;
       background-color: $content-bg;
       border-radius: 8px;
       @include box-shadow($shadows);
@@ -192,6 +193,8 @@ body {
 
 @include for-phone-only {
   .container {
+    width: 100%;
+    background: lime;
     .items-container {
       flex-flow: column;
     }
@@ -225,7 +228,7 @@ body {
 @include for-desktop-up {
   .container {
     .item {
-      width: 46%;
+      width: 45%;
     }
   }
 }

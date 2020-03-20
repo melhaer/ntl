@@ -6,22 +6,21 @@ class SearchBar extends React.Component {
     term: ''
   };
 
-  onFormSubmit = (event) => {
-    event.preventDefault();
+  onFilterChange = () => {
     this.props.onSubmit(this.state.term);
   }
 
   render() {
-    return (
-      <div className="search-bar" >
-        <form onSubmit={this.onFormSubmit}>
+    return(
+      <div className = "search-bar" >
+        <form>
           <div className="input-wrapper">
-            <input
-              type="text"
-              placeholder="Search"
-              value={this.state.term}
-              onChange={(e) => this.setState({ term: e.target.value })}
-            />
+          <input 
+            type="text" 
+            placeholder="Search" 
+            value={this.state.term} 
+            onChange={ e => {this.setState({ term: e.target.value }); this.onFilterChange()} } 
+          />
           </div>
         </form>
       </div>
