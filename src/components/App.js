@@ -10,12 +10,15 @@ class App extends React.Component {
   state = {
     quotes: [],
     filteredQuotes: [],
+    asc: true,
   }
   componentDidMount() {
     this.getQuotes();
+    //this.sortResults();
   }
   getQuotes() {
-    axios.get(`http://localhost:3001/quotes`)
+    axios
+      .get(`http://localhost:3001/quotes`)
       .then(
         res => {
           const quotes = res.data;
@@ -26,7 +29,8 @@ class App extends React.Component {
       )
   }
   removeItem = id => {
-    axios.delete(`http://localhost:3001/quotes/${id}`)
+    axios
+      .delete(`http://localhost:3001/quotes/${id}`)
       .then(
         res => {
           alert(`The quote will be deleted permanently!`);
@@ -38,6 +42,20 @@ class App extends React.Component {
   }
   onSearchSubmit = term => {
     this.setState({ filteredQuotes: term.trim() });
+  }
+
+  sortHandler = () => {
+    this.sortResults();
+  }
+
+  sortResults = () => {
+    const source = [...this.state.quotes];
+    const asc = this.state.asc;
+    source.sort( (a, b) => {
+      return (asc && (a.created_by.nationality > b.created_by.nationality)) ? 1 : -1;
+    });
+
+    this.setState({ quotes: source });
   }
 
   render() {
@@ -63,11 +81,12 @@ class App extends React.Component {
     );
 
     const itemDetailsHeight = ((quoteDetails.length / 2) & 1) ? (quoteDetails.length / 2 * 270) + 200 : quoteDetails.length / 2 * 270;
+    //console.log(this.state.quotes.map(quote => quote.created_by.name).sort());
 
     return (
       <div className="container">
         <SearchBar onSubmit={this.onSearchSubmit} />
-        <SortBar />
+        <SortBar sortResults={this.sortHandler} />
         <div className="items-container" style={{ height: `${itemDetailsHeight}px` }}>
           {quoteDetails}
         </div>

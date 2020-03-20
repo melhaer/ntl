@@ -14,6 +14,7 @@ body {
 .container {
   box-sizing: border-box;
   padding: 0 10px;
+
   .search-bar {
     padding: 1.25rem 0;
     @include min-width($minWidth);
@@ -53,6 +54,7 @@ body {
 
   .sort-bar {
     margin: auto;
+    padding: 0 0 1.25rem;
     text-align: center;
     @include max-width($maxWidth);
     color: $pale-color;
@@ -98,7 +100,7 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
-    @include min-width($minWidth);
+    //@include min-width($minWidth);
     @include max-width($maxWidth);
     padding: 1.25rem;
     margin: auto;
@@ -115,7 +117,7 @@ body {
 
     .item {
       position: relative;
-      margin-bottom: 2%;
+      margin-bottom: 1.8rem;
       padding: 3.75rem 1rem 1.25rem 2.5rem;
       background-color: $content-bg;
       border-radius: 8px;
@@ -148,12 +150,12 @@ body {
       font-size: .875rem;
       line-height: 1.6;
     }
-  
+
     .tags {
       font-size: .75rem;
       color: $pale-color;
       margin-bottom: 1.2rem;
-  
+
       span {
         display: inline-block;
         min-width: 1.875rem;
@@ -168,7 +170,7 @@ body {
     .author-details {
       font-size: .75rem;
       color: $pale-color;
-  
+
       span {
         padding-right: .1875rem;
       }
@@ -179,7 +181,7 @@ body {
       top: 20px;
       right: 20px;
       cursor: pointer;
-  
+
       &::before {
         display: inline-block;
         width: 20px;
@@ -193,25 +195,43 @@ body {
 
 @include for-phone-only {
   .container {
-    width: 100%;
-    background: lime;
+    width: calc(100% - 2.5rem);
+    margin: auto;
+
     .items-container {
-      flex-flow: column;
+      min-width: auto;
+      width: auto;
+      display: block;
+      padding: 0;
     }
 
     .item {
-      width: 100%;
-    }
-
-    .item:nth-child(2n+1),
-    .item:nth-child(2n) {
-      order: 0;
-      margin-right: 0;
+      width: auto;
     }
 
     .search-bar {
-      input {
-        @include min-width($minWidth);
+      padding: .75rem 0;
+      min-width: 260px;
+
+      .input-wrapper {
+        min-width: 225px;
+
+        input {
+          min-width: auto;
+        }
+      }
+    }
+
+    .sort-bar {
+      padding: 0 0 .25rem;
+
+      label {
+        display: none;
+      }
+
+      span {
+        width: 225px;
+        margin: 0 0 .5rem;
       }
     }
   }
@@ -219,16 +239,31 @@ body {
 
 @include for-tablet-portrait-up {
   .container {
-    .item {
-      width: 43%;
+    .items-container {
+      padding: 0;
+
+      .item {
+        width: 48%;
+        box-sizing: border-box;
+        margin-bottom: 1.25rem;
+
+        &:nth-child(2n+1) {
+          margin-right: 0;
+        }
+      }
+
+
     }
   }
 }
 
 @include for-desktop-up {
   .container {
-    .item {
-      width: 45%;
+    .items-container {
+      .item {
+        width: 48.5%;
+        margin-bottom: 1.75rem;
+      }
     }
   }
 }

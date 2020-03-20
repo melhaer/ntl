@@ -4,26 +4,16 @@
       "id": "5e25adf5ca150f293e0e8e23",
       "content": "So I use a lot of 409",
       "type": "QUOTE",
-      "tags": [
-        "middle",
-        "test"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["middle", "test"],
+      "studies": [158],
       "created_by": {
         "name": "Dan",
         "surname": "Smith",
         "email": "John@usertrb.net",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 67.5,
       "end_timestamp": 69.2,
       "start": 67.5,
@@ -40,25 +30,16 @@
       "id": "5e25ae05ca150f293e0e8e24",
       "content": "I use and I think also price is",
       "type": "QUOTE",
-      "tags": [
-        "no_task"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["no_task"],
+      "studies": [158],
       "created_by": {
         "name": "James",
         "surname": "Hetfield",
         "email": "James@usertrb.net",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 99,
       "end_timestamp": 104.3,
       "start": 99,
@@ -75,25 +56,16 @@
       "id": "5e25ae24ccc33f06855a4674",
       "content": "It sounded awesome.",
       "type": "QUOTE",
-      "tags": [
-        "short"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["short"],
+      "studies": [158],
       "created_by": {
         "name": "Dave",
         "surname": "Lombardo",
         "email": "David@usertrb.net",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 117.3,
       "end_timestamp": 118.1,
       "start": 117.3,
@@ -110,25 +82,16 @@
       "id": "5e25ae3297ef2263d365a013",
       "content": "Really I think of the toilets got to be clean. These things got to be clean. The floors need to be clean. Everything's got to be clean and pristine and there it's easy to get dirty. I clean that really about once a week at most sometimes every other week, unfortunately because I don't think about it as much. um I use the same similar products. I use like the 409 cleaner in the Clorox bathroom cleaner, which actually does a good job. And then I also use Ajax for bleaching the sink.",
       "type": "QUOTE",
-      "tags": [
-        "long"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["long"],
+      "studies": [158],
       "created_by": {
         "name": "David",
         "surname": "Eleffson",
         "email": "Lars@usertrb.net",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 175.4,
       "end_timestamp": 210,
       "start": 175.4,
@@ -145,26 +108,16 @@
       "id": "5e25ae4195e9202ba27fd683",
       "content": "I'm going to Big what is this and I better have some good explanation for me to want to buy it.",
       "type": "QUOTE",
-      "tags": [
-        "end",
-        "test"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["end", "test"],
+      "studies": [158],
       "created_by": {
         "name": "Tom",
         "surname": "Araya",
         "email": "Kerry@usertrb.net",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 696.4,
       "end_timestamp": 700.1,
       "start": 696.4,
@@ -181,25 +134,16 @@
       "id": "5e25ae57ca150f293e0e8e25",
       "content": "If it doesn't work well and then you're kind of screwed. So on which areas of your home. Would you be willing to try to provide a clean? I'd probably try that more so in like the kitchen first is because",
       "type": "QUOTE",
-      "tags": [
-        "basi"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["basi"],
+      "studies": [158],
       "created_by": {
         "name": "Kerry",
         "surname": "King",
         "email": "Dan@usertrb.net",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 630.5,
       "end_timestamp": 638.4,
       "start": 630.5,
@@ -213,28 +157,97 @@
       }
     },
     {
+      "id": "5e33e8e05c8c040db35fc293",
+      "content": "So I the ideal antibacterial product would be effective. It would have stats on the bottle that proved",
+      "type": "QUOTE",
+      "tags": ["test", "test2"],
+      "studies": [158],
+      "created_by": {
+        "name": "Roland",
+        "surname": "Deschain",
+        "email": "Nadyagergi67@abv.bg",
+        "client_id": 1046,
+        "client": { "id": 1046, "name": "UserTribe" }
+      },
+      "video": { "id": 330 },
+      "start_timestamp": 380,
+      "end_timestamp": 385,
+      "start": 380,
+      "end": 385,
+      "participant": {
+        "id": 474,
+        "name": "Notcopied",
+        "email": "notcopied@aaa.com",
+        "nationality": "Argentina",
+        "age": 34
+      }
+    },
+    {
+      "id": "5e33e8ec68eab02921049a93",
+      "content": "Okay, so I guess I would think like stupid dumb and unnecessary because like why would you add probe I would you had good live bacteria to your home.",
+      "type": "QUOTE",
+      "tags": ["ten"],
+      "studies": [158],
+      "created_by": {
+        "name": "Nadya",
+        "surname": "Johnson",
+        "email": "Nadyagergi67@abv.bg",
+        "client_id": 1046,
+        "client": { "id": 1046, "name": "UserTribe" }
+      },
+      "video": { "id": 330 },
+      "start_timestamp": 404.8,
+      "end_timestamp": 417.1,
+      "start": 404.8,
+      "end": 417.1,
+      "participant": {
+        "id": 474,
+        "name": "Notcopied",
+        "email": "notcopied@aaa.com",
+        "nationality": "Australia",
+        "age": 34
+      }
+    },
+    {
+      "id": "5e33e8f78f44e440c27c6983",
+      "content": "I want it all gone. hmm So providing a deep and long-lasting clean. I don't understand that doesn't make sense to me. That's what an antibiotic thing should do. Any bacterial thing?",
+      "type": "QUOTE",
+      "tags": ["pagiination"],
+      "studies": [158],
+      "created_by": {
+        "name": "Anna",
+        "surname": "Smith",
+        "email": "Annagergi67@abv.bg",
+        "client_id": 1046,
+        "client": { "id": 1046, "name": "UserTribe" }
+      },
+      "video": { "id": 330 },
+      "start_timestamp": 456.6,
+      "end_timestamp": 491.2,
+      "start": 456.6,
+      "end": 491.2,
+      "participant": {
+        "id": 474,
+        "name": "Notcopied",
+        "email": "notcopied@aaa.com",
+        "nationality": "Australia",
+        "age": 34
+      }
+    },
+    {
       "id": "5e33e9168f44e440c27c6984",
       "content": "And also I could use it if it does really prevent bad odor in your washing machine.",
       "type": "QUOTE",
-      "tags": [
-        "middle"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["middle"],
+      "studies": [158],
       "created_by": {
         "name": "Anna",
         "surname": "Smith",
         "email": "Emmagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 557.6,
       "end_timestamp": 561.9,
       "start": 557.6,
@@ -251,25 +264,16 @@
       "id": "5e33e921b42fa32f4e310ef3",
       "content": "least important benefit I think would be.",
       "type": "QUOTE",
-      "tags": [
-        "short"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["short"],
+      "studies": [158],
       "created_by": {
         "name": "Emma",
         "surname": "Thompson",
         "email": "Emmagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 574.6,
       "end_timestamp": 581.3,
       "start": 574.6,
@@ -286,25 +290,16 @@
       "id": "5e33e9b71209d449493ca414",
       "content": "Yeah, those are really the ones I can think of.",
       "type": "QUOTE",
-      "tags": [
-        "only"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["only"],
+      "studies": [158],
       "created_by": {
         "name": "Samanta",
         "surname": "Thompson",
         "email": "Samantagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 344.7,
       "end_timestamp": 346.4,
       "start": 344.7,
@@ -318,28 +313,45 @@
       }
     },
     {
+      "id": "5e33e9c3422b5f44d338fb63",
+      "content": "What do I think of bacteria?",
+      "type": "QUOTE",
+      "tags": ["bakteria"],
+      "studies": [158],
+      "created_by": {
+        "name": "Samanta",
+        "surname": "Fox",
+        "email": "Dianagergi67@abv.bg",
+        "client_id": 1046,
+        "client": { "id": 1046, "name": "UserTribe" }
+      },
+      "video": { "id": 330 },
+      "start_timestamp": 314.4,
+      "end_timestamp": 315.8,
+      "start": 314.4,
+      "end": 315.8,
+      "participant": {
+        "id": 474,
+        "name": "Notcopied",
+        "email": "notcopied@aaa.com",
+        "nationality": "Belarus",
+        "age": 34
+      }
+    },
+    {
       "id": "5e33ea03f08abc1e38049f63",
       "content": "Why don't you just kill him providing an outer Shield against bed odors on your clothes a benefit specific to probiotic laundry detergents.",
       "type": "QUOTE",
-      "tags": [
-        "ima"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["ima"],
+      "studies": [158],
       "created_by": {
         "name": "Diana",
         "surname": "Fox",
         "email": "Dianagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 507.9,
       "end_timestamp": 516.4,
       "start": 507.9,
@@ -356,26 +368,16 @@
       "id": "5e33ea62b42fa32f4e310ef4",
       "content": "I know for sure if I want to use it, you know what I mean?",
       "type": "QUOTE",
-      "tags": [
-        "know",
-        "mean"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["know", "mean"],
+      "studies": [158],
       "created_by": {
         "name": "Arya",
         "surname": "Stark",
         "email": "Aryagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 654.3,
       "end_timestamp": 656.5,
       "start": 654.3,
@@ -392,26 +394,16 @@
       "id": "5e33ea863398563d5d7ce525",
       "content": "I would not be willing to pay for this type of product at this point because I don't believe in it even so um,",
       "type": "QUOTE",
-      "tags": [
-        "pay",
-        "believe"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["pay", "believe"],
+      "studies": [158],
       "created_by": {
         "name": "Arya",
         "surname": "Stark",
         "email": "Robertgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 663.3,
       "end_timestamp": 671.1,
       "start": 663.3,
@@ -425,28 +417,45 @@
       }
     },
     {
+      "id": "5e33eaca3187734a302c2a93",
+      "content": "I don't know how pleasant bacteria can smell potentially reducing the development of allergies.",
+      "type": "QUOTE",
+      "tags": ["know"],
+      "studies": [158],
+      "created_by": {
+        "name": "Robert",
+        "surname": "Trujillo",
+        "email": "Robertgergi67@abv.bg",
+        "client_id": 1046,
+        "client": { "id": 1046, "name": "UserTribe" }
+      },
+      "video": { "id": 330 },
+      "start_timestamp": 535.3,
+      "end_timestamp": 539.1,
+      "start": 535.3,
+      "end": 539.1,
+      "participant": {
+        "id": 474,
+        "name": "Notcopied",
+        "email": "notcopied@aaa.com",
+        "nationality": "Cuba",
+        "age": 34
+      }
+    },
+    {
       "id": "5e33ead770e2b6745779889e",
       "content": "Even if it's good?",
       "type": "QUOTE",
-      "tags": [
-        "good"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["good"],
+      "studies": [158],
       "created_by": {
         "name": "Stephen",
         "surname": "Trujillo",
         "email": "Stephengergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 426.5,
       "end_timestamp": 427.5,
       "start": 426.5,
@@ -463,26 +472,16 @@
       "id": "5e33eaee33e8c373967f3c53",
       "content": "So Thank you Father for my bathroom.",
       "type": "QUOTE",
-      "tags": [
-        "thank you",
-        "test_an"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["thank you", "test_an"],
+      "studies": [158],
       "created_by": {
         "name": "Stephen",
         "surname": "King",
         "email": "Jackgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 239.2,
       "end_timestamp": 242.1,
       "start": 239.2,
@@ -499,26 +498,16 @@
       "id": "5e396be4ca02123a92671a38",
       "content": "All right.",
       "type": "QUOTE",
-      "tags": [
-        "task1",
-        "test"
-      ],
-      "studies": [
-        197
-      ],
+      "tags": ["task1", "test"],
+      "studies": [197],
       "created_by": {
         "name": "Jack",
         "surname": "Dowson",
         "email": "Jackgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 381
-      },
+      "video": { "id": 381 },
       "start_timestamp": 5.9,
       "end_timestamp": 6.8,
       "start": 5.9,
@@ -535,27 +524,16 @@
       "id": "5e396be4ca02123a92671a39",
       "content": "I'm 23 years old.",
       "type": "QUOTE",
-      "tags": [
-        "task2",
-        "test2",
-        "middle"
-      ],
-      "studies": [
-        197
-      ],
+      "tags": ["task2", "test2", "middle"],
+      "studies": [197],
       "created_by": {
         "name": "Brandon",
         "surname": "Sanderson",
         "email": "Brandongergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 381
-      },
+      "video": { "id": 381 },
       "start_timestamp": 13,
       "end_timestamp": 14.3,
       "start": 13,
@@ -572,26 +550,16 @@
       "id": "5e396be4ca02123a92671a3a",
       "content": "Granite cleaner for my granite countertops.",
       "type": "QUOTE",
-      "tags": [
-        "task11",
-        "middle"
-      ],
-      "studies": [
-        197
-      ],
+      "tags": ["task11", "middle"],
+      "studies": [197],
       "created_by": {
         "name": "Brandon",
         "surname": "Sanderson",
         "email": "Liamgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 381
-      },
+      "video": { "id": 381 },
       "start_timestamp": 80,
       "end_timestamp": 82,
       "start": 80,
@@ -608,26 +576,16 @@
       "id": "5e396be4ca02123a92671a3b",
       "content": "there's no dishes that aren't put away.",
       "type": "QUOTE",
-      "tags": [
-        "no_task",
-        "test"
-      ],
-      "studies": [
-        197
-      ],
+      "tags": ["no_task", "test"],
+      "studies": [197],
       "created_by": {
         "name": "Liam",
         "surname": "Neason",
         "email": "Liamgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 382
-      },
+      "video": { "id": 382 },
       "start_timestamp": 31.5,
       "end_timestamp": 34.1,
       "start": 31.5,
@@ -644,26 +602,16 @@
       "id": "5e396be4ca02123a92671a3c",
       "content": "It wouldn't leave like stains and like it",
       "type": "QUOTE",
-      "tags": [
-        "no_task",
-        "middle"
-      ],
-      "studies": [
-        197
-      ],
+      "tags": ["no_task", "middle"],
+      "studies": [197],
       "created_by": {
         "name": "Noah",
         "surname": "Galahar",
         "email": "Noahgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 382
-      },
+      "video": { "id": 382 },
       "start_timestamp": 140,
       "end_timestamp": 142,
       "start": 140,
@@ -680,26 +628,16 @@
       "id": "5e396be4ca02123a92671a3d",
       "content": "have some good explanation for me to want to buy it.",
       "type": "QUOTE",
-      "tags": [
-        "no_task",
-        "end"
-      ],
-      "studies": [
-        197
-      ],
+      "tags": ["no_task", "end"],
+      "studies": [197],
       "created_by": {
         "name": "Noah",
         "surname": "Galahar",
         "email": "Williamgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 382
-      },
+      "video": { "id": 382 },
       "start_timestamp": 698,
       "end_timestamp": 700.1,
       "start": 698,
@@ -716,25 +654,16 @@
       "id": "5e396be4ca02123a92671a3e",
       "content": "countertops and Floors cleaning.",
       "type": "QUOTE",
-      "tags": [
-        "completed"
-      ],
-      "studies": [
-        197
-      ],
+      "tags": ["completed"],
+      "studies": [197],
       "created_by": {
         "name": "William",
         "surname": "Shakespeare",
         "email": "Williamgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 382
-      },
+      "video": { "id": 382 },
       "start_timestamp": 63.9,
       "end_timestamp": 65.5,
       "start": 63.9,
@@ -751,26 +680,16 @@
       "id": "5e3c3a9debaa9e74817c3553",
       "content": "All right.",
       "type": "QUOTE",
-      "tags": [
-        "begin",
-        "goshi"
-      ],
-      "studies": [
-        199
-      ],
+      "tags": ["begin", "goshi"],
+      "studies": [199],
       "created_by": {
         "name": "Oliver",
         "surname": "Smith",
         "email": "Olivergergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 384
-      },
+      "video": { "id": 384 },
       "start_timestamp": 5.9,
       "end_timestamp": 6.8,
       "start": 5.9,
@@ -787,25 +706,16 @@
       "id": "5e4158dca6f0391fb25e1a63",
       "content": "stores.",
       "type": "QUOTE",
-      "tags": [
-        "end"
-      ],
-      "studies": [
-        197
-      ],
+      "tags": ["end"],
+      "studies": [197],
       "created_by": {
         "name": "Oliver",
         "surname": "Smith",
         "email": "Benjamingergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 381
-      },
+      "video": { "id": 381 },
       "start_timestamp": 391,
       "end_timestamp": 391.5,
       "start": 391,
@@ -822,25 +732,16 @@
       "id": "5e4ab7ddb4f29a7c8951edf4",
       "content": "But as far as like the entire thing I make sure that every Saturday",
       "type": "QUOTE",
-      "tags": [
-        "seem me in search"
-      ],
-      "studies": [
-        158
-      ],
+      "tags": ["seem me in search"],
+      "studies": [158],
       "created_by": {
         "name": "Benjamin",
         "surname": "Franklin",
         "email": "Benjamingergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 330
-      },
+      "video": { "id": 330 },
       "start_timestamp": 57.5,
       "end_timestamp": 61.8,
       "start": 57.5,
@@ -857,25 +758,16 @@
       "id": "5e4ba9c694d3b114213ca886",
       "content": "I'm a server at a restaurant.",
       "type": "QUOTE",
-      "tags": [
-        "testquote"
-      ],
-      "studies": [
-        197
-      ],
+      "tags": ["testquote"],
+      "studies": [197],
       "created_by": {
         "name": "Lucas",
         "surname": "Douglas",
         "email": "Lucasgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 381
-      },
+      "video": { "id": 381 },
       "start_timestamp": 18.2,
       "end_timestamp": 19.8,
       "start": 18.2,
@@ -892,26 +784,16 @@
       "id": "5e4bcbd59d546e486b29eab5",
       "content": "And other than that just like availability like if it's if it's in the store",
       "type": "QUOTE",
-      "tags": [
-        "on_top",
-        "test"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["on_top", "test"],
+      "studies": [205],
       "created_by": {
         "name": "Lucas",
         "surname": "Douglas",
         "email": "Lukegergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 107.3,
       "end_timestamp": 111.4,
       "start": 107.3,
@@ -928,25 +810,16 @@
       "id": "5e4bcbd59d546e486b29eab4",
       "content": "say about It varies I try to do it at least a few times a week. But",
       "type": "QUOTE",
-      "tags": [
-        "test_an"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["test_an"],
+      "studies": [205],
       "created_by": {
         "name": "Luke",
         "surname": "Skywalker",
         "email": "Lukegergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 394
-      },
+      "video": { "id": 394 },
       "start_timestamp": 50.8,
       "end_timestamp": 58.3,
       "start": 50.8,
@@ -963,26 +836,16 @@
       "id": "5e4bcbd59d546e486b29eab6",
       "content": "But if it's not really clean, you're not doing yourself any favors,",
       "type": "QUOTE",
-      "tags": [
-        "on_top",
-        "lunch"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["on_top", "lunch"],
+      "studies": [205],
       "created_by": {
         "name": "Leya",
         "surname": "Skywalker",
         "email": "Leyagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 289.1,
       "end_timestamp": 291.9,
       "start": 289.1,
@@ -999,26 +862,16 @@
       "id": "5e4bcbd59d546e486b29eab7",
       "content": "It's important that harmless to humans and animals that's important.",
       "type": "QUOTE",
-      "tags": [
-        "on_top",
-        "design"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["on_top", "design"],
+      "studies": [205],
       "created_by": {
         "name": "Leya",
         "surname": "Skywalker",
         "email": "Oliviagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 551.4,
       "end_timestamp": 556.9,
       "start": 551.4,
@@ -1035,26 +888,16 @@
       "id": "5e4bcbd59d546e486b29eab8",
       "content": "So if my advice to the probiotic the makers of the probiotic cleaners would be if you do have facts that these things will happen when I use it.",
       "type": "QUOTE",
-      "tags": [
-        "on_top",
-        "advice"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["on_top", "advice"],
+      "studies": [205],
       "created_by": {
         "name": "Olivia",
         "surname": "Newton-John",
         "email": "Oliviagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 673.4,
       "end_timestamp": 685.1,
       "start": 673.4,
@@ -1071,25 +914,16 @@
       "id": "5e4bcbd59d546e486b29eab9",
       "content": "and",
       "type": "QUOTE",
-      "tags": [
-        "one"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["one"],
+      "studies": [205],
       "created_by": {
         "name": "Isabella",
         "surname": "Leffort",
         "email": "Isabellagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 38.4,
       "end_timestamp": 39,
       "start": 38.4,
@@ -1106,25 +940,16 @@
       "id": "5e4bcbd59d546e486b29eabb",
       "content": "put it on a I also use a method Target brand Granite cleaner for my granite countertops.",
       "type": "QUOTE",
-      "tags": [
-        "put"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["put"],
+      "studies": [205],
       "created_by": {
         "name": "Isabella",
         "surname": "Leffort",
         "email": "Sophiagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 395
-      },
+      "video": { "id": 395 },
       "start_timestamp": 75.9,
       "end_timestamp": 82,
       "start": 75.9,
@@ -1141,25 +966,16 @@
       "id": "5e4bcbd59d546e486b29eabd",
       "content": "What do you think about the idea of using Pro?",
       "type": "QUOTE",
-      "tags": [
-        "pro"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["pro"],
+      "studies": [205],
       "created_by": {
         "name": "Sophia",
         "surname": "Gogia",
         "email": "Sophiagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 395
-      },
+      "video": { "id": 395 },
       "start_timestamp": 420.5,
       "end_timestamp": 422.2,
       "start": 420.5,
@@ -1176,25 +992,16 @@
       "id": "5e4bcbd59d546e486b29eabc",
       "content": "Okay, so I guess I would think like stupid dumb and unnecessary because like why would you add probe I would you had good live bacteria to your home.",
       "type": "QUOTE",
-      "tags": [
-        "okay"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["okay"],
+      "studies": [205],
       "created_by": {
         "name": "Mia",
         "surname": "Gogia",
         "email": "Miagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 395
-      },
+      "video": { "id": 395 },
       "start_timestamp": 404.8,
       "end_timestamp": 417.1,
       "start": 404.8,
@@ -1211,26 +1018,16 @@
       "id": "5e4bcbd59d546e486b29eaba",
       "content": "It's not put away",
       "type": "QUOTE",
-      "tags": [
-        "on_top",
-        "away"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["on_top", "away"],
+      "studies": [205],
       "created_by": {
         "name": "Mia",
         "surname": "Gogia",
         "email": "Mariagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 395
-      },
+      "video": { "id": 395 },
       "start_timestamp": 35.5,
       "end_timestamp": 36.3,
       "start": 35.5,
@@ -1247,25 +1044,16 @@
       "id": "5e4bcbd59d546e486b29eabe",
       "content": "I don't believe in it even so um, I can advise the I would okay.",
       "type": "QUOTE",
-      "tags": [
-        "thinking"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["thinking"],
+      "studies": [205],
       "created_by": {
         "name": "Maria",
         "surname": "Sanderson",
         "email": "Mariagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 395
-      },
+      "video": { "id": 395 },
       "start_timestamp": 666.2,
       "end_timestamp": 673.4,
       "start": 666.2,
@@ -1282,25 +1070,16 @@
       "id": "5e4bcbd59d546e486b29eabf",
       "content": "wants to buy it.",
       "type": "QUOTE",
-      "tags": [
-        "fix"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["fix"],
+      "studies": [205],
       "created_by": {
         "name": "Maria",
         "surname": "Sanderson",
         "email": "Mariagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 395
-      },
+      "video": { "id": 395 },
       "start_timestamp": 699.5,
       "end_timestamp": 700.1,
       "start": 699.5,
@@ -1317,25 +1096,16 @@
       "id": "5e4be4944b452744385f4526",
       "content": "That my clothes already smell fine.",
       "type": "QUOTE",
-      "tags": [
-        "newly created"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["newly created"],
+      "studies": [205],
       "created_by": {
         "name": "Amelia",
         "surname": "Smipson",
         "email": "Ameliagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 517.6,
       "end_timestamp": 519.2,
       "start": 517.6,
@@ -1352,25 +1122,16 @@
       "id": "5e4d24abb5e219031b4ad233",
       "content": "So I use a lot of 409 and I use the Clorox kitchen cleaner.",
       "type": "QUOTE",
-      "tags": [
-        "added by nat when completed"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["added by nat when completed"],
+      "studies": [205],
       "created_by": {
         "name": "Amelia",
         "surname": "Smipson",
         "email": "Ameliagergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 67.5,
       "end_timestamp": 71.5,
       "start": 67.5,
@@ -1387,25 +1148,16 @@
       "id": "5e4d24b51b5bf5315047c833",
       "content": "I would say your kitchen contains a lot. I would also say obviously your toilet contains a lot.",
       "type": "QUOTE",
-      "tags": [
-        "added by nat when completed"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["added by nat when completed"],
+      "studies": [205],
       "created_by": {
         "name": "Harper",
         "surname": "Lee",
         "email": "Harpergergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 329.5,
       "end_timestamp": 338.7,
       "start": 329.5,
@@ -1422,25 +1174,16 @@
       "id": "5e4d24c1ccb1ed3f093abb03",
       "content": "I don't understand that but if it works cool, but I don't understand how that works.",
       "type": "QUOTE",
-      "tags": [
-        "added by nat when completed"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["added by nat when completed"],
+      "studies": [205],
       "created_by": {
         "name": "Harper",
         "surname": "Lee",
         "email": "Evelyngergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 495.1,
       "end_timestamp": 499.4,
       "start": 495.1,
@@ -1457,25 +1200,16 @@
       "id": "5e4d24f294d3b114213ca889",
       "content": "So I the ideal antibacterial product would be effective.",
       "type": "QUOTE",
-      "tags": [
-        "added by nat when completed"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["added by nat when completed"],
+      "studies": [205],
       "created_by": {
         "name": "Evelyn",
         "surname": "Johnson",
         "email": "Evelyngergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 380,
       "end_timestamp": 383.2,
       "start": 380,
@@ -1492,25 +1226,16 @@
       "id": "5e4d24f89d546e486b29eac9",
       "content": "I scored it a one because I don't see any.",
       "type": "QUOTE",
-      "tags": [
-        "added by nat when completed"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["added by nat when completed"],
+      "studies": [205],
       "created_by": {
         "name": "Samuel",
         "surname": "Johnson",
         "email": "Samuelgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 393
-      },
+      "video": { "id": 393 },
       "start_timestamp": 436.6,
       "end_timestamp": 440,
       "start": 436.6,
@@ -1527,26 +1252,16 @@
       "id": "5e4d513299e5f17c9a547133",
       "content": "I don't think about it as much. um I use the same similar products.",
       "type": "QUOTE",
-      "tags": [
-        "on_top",
-        "similar"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["on_top", "similar"],
+      "studies": [205],
       "created_by": {
         "name": "Samuel",
         "surname": "Jackson",
         "email": "Bradgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 394
-      },
+      "video": { "id": 394 },
       "start_timestamp": 193.2,
       "end_timestamp": 200,
       "start": 193.2,
@@ -1563,26 +1278,16 @@
       "id": "5e4fc6575690166f552d7473",
       "content": "So your product and your opinion what would just so characteristics would be it wouldn't cost too much.",
       "type": "QUOTE",
-      "tags": [
-        "start",
-        "tasks test"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["start", "tasks test"],
+      "studies": [205],
       "created_by": {
         "name": "Brad",
         "surname": "Jackson",
         "email": "Bradgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 394
-      },
+      "video": { "id": 394 },
       "start_timestamp": 128.9,
       "end_timestamp": 138.9,
       "start": 128.9,
@@ -1599,25 +1304,16 @@
       "id": "5e577599fa0ef962e03bf113",
       "content": "I I the kitchen Actually, no, I'd be more likely to do it in like my bedroom or like a laundry room",
       "type": "QUOTE",
-      "tags": [
-        "zakuska"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["zakuska"],
+      "studies": [205],
       "created_by": {
         "name": "Johnny",
         "surname": "Depp",
         "email": "Johnnygergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 394
-      },
+      "video": { "id": 394 },
       "start_timestamp": 638.4,
       "end_timestamp": 647.4,
       "start": 638.4,
@@ -1634,25 +1330,16 @@
       "id": "5e5775c53214363fd451b8ed",
       "content": "Really I think of the toilets got to be clean.",
       "type": "QUOTE",
-      "tags": [
-        "zakuska"
-      ],
-      "studies": [
-        199
-      ],
+      "tags": ["zakuska"],
+      "studies": [199],
       "created_by": {
         "name": "Johnny",
         "surname": "Depp",
         "email": "Idrisgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 384
-      },
+      "video": { "id": 384 },
       "start_timestamp": 175.4,
       "end_timestamp": 178,
       "start": 175.4,
@@ -1669,25 +1356,16 @@
       "id": "5e58dff6a11e4910521badc4",
       "content": "and I also got to know the brand. And like the brand I'm very satisfied again.",
       "type": "QUOTE",
-      "tags": [
-        "audience category"
-      ],
-      "studies": [
-        205
-      ],
+      "tags": ["audience category"],
+      "studies": [205],
       "created_by": {
         "name": "Idris",
         "surname": "Elba",
         "email": "Rolandgergi67@abv.bg",
         "client_id": 1046,
-        "client": {
-          "id": 1046,
-          "name": "UserTribe"
-        }
+        "client": { "id": 1046, "name": "UserTribe" }
       },
-      "video": {
-        "id": 395
-      },
+      "video": { "id": 395 },
       "start_timestamp": 250.7,
       "end_timestamp": 256.7,
       "start": 250.7,
