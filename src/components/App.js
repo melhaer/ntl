@@ -11,10 +11,10 @@ class App extends React.Component {
     quotes: [],
     filteredQuotes: [],
     asc: true,
+    sortedBy: 'nationality',
   }
   componentDidMount() {
     this.getQuotes();
-    //this.sortResults();
   }
   getQuotes() {
     axios
@@ -45,27 +45,29 @@ class App extends React.Component {
   }
 
   sortHandler = () => {
-    this.sortResults();
+    this.setState( {asc: !this.state.asc} );
   }
 
-  sortResults = () => {
-    const source = [...this.state.quotes];
-    const asc = this.state.asc;
-    source.sort( (a, b) => {
-      return (asc && (a.created_by.nationality > b.created_by.nationality)) ? 1 : -1;
-    });
-
-    this.setState({ quotes: source });
+  sortCountries = (a, b) => {
+    return (a.participant[this.state.sortedBy] > b.participant[this.state.sortedBy]) && this.state.asc ? 1 : -1;
   }
 
-  render() {
+  getSortFilterResult() {
     let filteredResults = this.state.quotes;
 
     if (this.state.filteredQuotes) {
       filteredResults = this.state.quotes.filter(quote => quote.content.includes(this.state.filteredQuotes));
     }
 
-    const quoteDetails = filteredResults.map(
+    filteredResults.sort(this.sortCountries);
+
+    return filteredResults;
+  }
+  
+  render() {
+    const filterResults = this.getSortFilterResult();
+
+    const quoteDetails = filterResults.map(
       ({ id, content, created_by, age, participant, tags }) => (
         <ItemDetails
           id={id}
@@ -81,8 +83,7 @@ class App extends React.Component {
     );
 
     const itemDetailsHeight = ((quoteDetails.length / 2) & 1) ? (quoteDetails.length / 2 * 270) + 200 : quoteDetails.length / 2 * 270;
-    //console.log(this.state.quotes.map(quote => quote.created_by.name).sort());
-
+    
     return (
       <div className="container">
         <SearchBar onSubmit={this.onSearchSubmit} />
