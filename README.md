@@ -19,7 +19,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 To connect the repo with the json-server, open the `https://github.com/melhaer/ntl/tree/master/api` folder on your local machine na use console to run `npm start` in a different window. 
 
-It will run on [http://localhost:3000](http://localhost:3000) and you will be able to see the JSON structure at [http://localhost:3001/quotes].
+It will run on [http://localhost:3000](http://localhost:3000) and you will be able to see the JSON structure at [http://localhost:3001/quotes](http://localhost:3001/quotes)
 
 Now you should have both localhosts 3000 and 3001 running.
 
