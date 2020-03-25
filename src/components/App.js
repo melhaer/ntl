@@ -12,8 +12,10 @@ class App extends React.Component {
     filteredQuotes: [],
     asc: true,
     sortedBy: 'nationality',
+    height: 0,
   }
-  componentDidMount() {
+  
+  componentDidMount = () => {
     this.getQuotes();
   }
   getQuotes() {
@@ -52,7 +54,7 @@ class App extends React.Component {
     return (a.participant[this.state.sortedBy] > b.participant[this.state.sortedBy]) && this.state.asc ? 1 : -1;
   }
 
-  getSortFilterResult() {
+  getSortFilterResult = () => {
     let filteredResults = this.state.quotes;
 
     if (this.state.filteredQuotes) {
@@ -62,6 +64,23 @@ class App extends React.Component {
     filteredResults.sort(this.sortCountries);
 
     return filteredResults;
+  }
+
+  componentDidUpdate = () => {
+    this.getSortFilterResult();
+    this.calculateColHeight();
+  }
+  calculateColHeight = () => {
+    const leftColHeight = 
+      Array.from(document.querySelectorAll('.item:nth-child(2n+1)'))
+        .reduce((contentHeight, item) => (contentHeight + (item.offsetHeight + 35)), 0 );
+    const rightColHeight = 
+      Array.from(document.querySelectorAll('.item:nth-child(2n)'))
+        .reduce((contentHeight, item) => (contentHeight + (item.offsetHeight + 35)), 0 );
+        
+    const contentHeight = (leftColHeight >= rightColHeight) ? leftColHeight : rightColHeight;
+
+    return (this.state.height !== contentHeight) ? this.setState({ height: contentHeight }) : 0;
   }
   
   render() {
@@ -81,14 +100,12 @@ class App extends React.Component {
         />
       )
     );
-
-    const itemDetailsHeight = ((quoteDetails.length / 2) & 1) ? (quoteDetails.length / 2 * 270) + 200 : quoteDetails.length / 2 * 270;
-    
+ 
     return (
       <div className="container">
         <SearchBar onSubmit={this.onSearchSubmit} />
         <SortBar sortResults={this.sortHandler} />
-        <div className="items-container" style={{ height: `${itemDetailsHeight}px` }}>
+        <div className="items-container" style={{ height: `${this.state.height}px` }}>
           {quoteDetails}
         </div>
       </div>

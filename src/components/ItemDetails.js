@@ -1,11 +1,8 @@
 import React from 'react';
 class ItemDetails extends React.Component {
-
   deleteButtonHandler = () => {
     this.props.closeHandler(this.props.id);
   }
-  
-  
   render() {
     const tagList = this.props.tags.map((tag, index) => <span key={index}>{tag}</span>);
     return (
